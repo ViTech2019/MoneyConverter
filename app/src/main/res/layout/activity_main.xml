@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorVeryLightBlue"
+              tools:context=".MainActivity"
+              android:orientation="vertical">
+
+    <Button android:id="@+id/nextActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="next activity"
+            android:layout_marginStart="305dp"
+            android:layout_marginTop="5dp"
+            android:textSize="5dp"/>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:text="Dollar To Shekel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:id="@+id/dollarToShekel"/>
+        <EditText
+                android:id="@+id/convertDollar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Enter Dollar"/>
+        <Button
+                android:id="@+id/buttonDollar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="CONVERT"
+                android:layout_marginStart="16dp"
+                android:textSize="20sp"
+                android:onClick="convertDollarToShekel"
+
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:text="Euro To Shekel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:id="@+id/euroToShekel"/>
+        <EditText
+                android:id="@+id/convertEuro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Enter Euro"/>
+        <Button
+                android:id="@+id/buttonEuro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="16dp"
+                android:text="CONVERT"
+                android:textSize="20sp"
+                android:onClick="convertEuroToShekel"
+
+        />
+
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:text="British Pound To Shekel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:id="@+id/britishPoundToShekel"/>
+        <EditText
+                android:id="@+id/convertBritishPound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Enter British Pound"/>
+        <Button
+                android:id="@+id/buttonPound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="16dp"
+                android:text="CONVERT"
+                android:textSize="20sp"
+                android:onClick="convertBritishPoundToShekel"
+
+        />
+
+    </LinearLayout>
+</LinearLayout>

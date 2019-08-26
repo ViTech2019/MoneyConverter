@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string name="DSESPS"><![CDATA[Dollar<->Shekel Euro<->Shekel ‏BritishPound<->Shekel]]></string>
+</resources>
